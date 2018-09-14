@@ -5,6 +5,7 @@
   <meta charset='utf-8'>
   <meta name='viewport' content='width=device-width'>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
   <script src='main.js'></script>
 </head>
 <body>
@@ -15,12 +16,12 @@
   <button type='button' id='add-alarm'><i class="fas fa-plus"></i></button>
 
   <template id=alarm>
-    <div class=alarm-instance>
+    <div class=alarm-instance style='background: LightBlue'>
       <input type='checkbox' checked>
       <input type='time' value='08:00'>
-      <input type='text' value='Alarm name'>
+      <input type='text'>
       <select></select>
-      <button type='button' id='remove-alarm'><i class="far fa-trash-alt"></i></button>
+      <button type='button'><i class="far fa-trash-alt"></i></button>
     <div>
   </template>
 
