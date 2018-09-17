@@ -22,9 +22,9 @@ function addAlarm() {
     var checkbox = alarm.querySelector('input[type=checkbox]');
     checkbox.onchange = function() {
         if (checkbox.checked) {
-          alarm.style.background = 'LightBlue';
+            alarm.style.background = 'LightBlue';
         } else {
-          alarm.style.background = 'initial';
+            alarm.style.background = 'initial';
         }
     };
 
