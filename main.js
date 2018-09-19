@@ -2,17 +2,10 @@ var confirm_text = "yes i am";
 var prompt_text = `Are you woken up yet?
 (enter "${confirm_text}" to confirm you are)`;
 
-function removeAlarm(alarm) {
-    return function() {
-        alarm.parentElement.removeChild(alarm);
-    };
-}
-
 function addAlarm() {
     var alarm_list = document.querySelector('#alarm-list');
     var alarm_template = document.querySelector('#alarm');
     var alarm = document.importNode(alarm_template.content, true);
-    var timeout;
 
     // Insert new alarm and get a reference to it instead of just a clone
     // of the template
@@ -36,7 +29,7 @@ function addAlarm() {
     // Set event listener to button
     var button = alarm.querySelector('button');
     button.onclick = function() {
-        alarm.parentElement.removeChild(alarm);
+        alarm.remove();
     };
 }
 
